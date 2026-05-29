@@ -49,14 +49,6 @@ I am passionate about designing intelligent sensor-based systems for **wearable 
 - Email: **moazen.mustafa@yahoo.com**
 - Location: **Milan, Italy**
 
-### 🖥 Skills
-
-- **Programming:** Python, MATLAB, C, Java, SQL
-- **Signal Processing & Machine Learning:** Digital signal processing, time-series analysis, feature extraction, classification, neural networks, scikit-learn, PyTorch basics
-- **Data Analysis:** Sensor data processing, dataset creation, experimental data analysis, model evaluation
-- **Embedded Systems:** IMU sensors, ESP32, STM32, Arduino, BLE, UART, SPI, I2C, CAN
-- **Tools:** Git, Linux, Wireshark
-- **Biomedical & Wearable Systems:** Motion capture, gait analysis, wearable robotics, IoMT, biomedical signal acquisition
 
 ### ⚙️ Tech Stack
 
