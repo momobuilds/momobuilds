@@ -53,8 +53,12 @@ I am passionate about designing sensor-based systems for **wearable devices, bio
 ![Linux](https://img.shields.io/badge/-Linux-05122A?style=flat-square&logo=Linux&color=353535)
 ![Wireshark](https://img.shields.io/badge/-Wireshark-05122A?style=flat-square&logo=Wireshark&color=353535)
 
-<div>
+<div align="center">
   <a href="https://git.io/streak-stats">
-    <img width="50%" src="https://streak-stats.demolab.com/?user=momobuilds" alt="GitHub Streak for momobuilds" />
+    <img 
+      width="50%" 
+      src="https://streak-stats.demolab.com?user=momobuilds&theme=dark&hide_border=true&background=0D1117&stroke=30363D&ring=FF8C00&fire=FF8C00&currStreakLabel=FF8C00" 
+      alt="GitHub Streak for momobuilds" 
+    />
   </a>
 </div>
