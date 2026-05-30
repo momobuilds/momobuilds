@@ -5,7 +5,7 @@
 [![Github](https://img.shields.io/github/followers/momobuilds?label=Follow&style=social)](https://github.com/momobuilds)
 
 ## 👋 About Me
-I am passionate about designing intelligent sensor-based systems for **wearable devices, biomedical monitoring, AR/VR applications, medical simulation, and interactive healthcare technologies**.
+I am passionate about designing sensor-based systems for **wearable devices, biomedical monitoring, AR/VR applications, medical simulation, and interactive healthcare technologies**.
 
 ### 🚀 What I'm Doing Now
 
