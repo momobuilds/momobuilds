@@ -19,7 +19,7 @@ I am passionate about designing sensor-based systems for **wearable devices, bio
 ### 💼 Professional Highlights
 
 - **FUMCARE - Research Assistant**  
-  Designed and implemented three versions of wearable IMU sensors for motion analysis, including gait and running analysis.
+  Designed and implemented a human motion capture system with IMU.
 - **FUMCARE - Biomedical Engineer Intern**  
   Assembled wearable medical robotics devices, including FUM-HEXA and FUM-Exoskeleton, integrating sensors and microcontrollers.
 - **RAYAN - Electrical Engineer Intern**  
