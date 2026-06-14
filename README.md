@@ -8,33 +8,12 @@
 I am passionate about designing sensor-based systems for **wearable devices, biomedical monitoring, AR/VR applications, medical simulation, and interactive healthcare technologies**.
 
 ### 🚀 What I'm Doing Now
-
 - 🧠 **M.Sc. Student in Telecommunications Engineering at Politecnico di Milano**  
   Specializing in data and signal analysis, with a focus on biomedical signals, sensor data processing, machine learning, and embedded systems.
 - 🗣️ **Electronic Engineer at InVox - BEA and PMDS**  
   Working on a silent speech wearable device and implementing the first embedded data acquisition prototype.
 - ⌚ **Electronic Engineer at BEA Band**  
   Helping develop a screenless wearable watch, focusing on miniaturizing the latest embedded prototype.
-
-### 💼 Professional Highlights
-
-- **FUMCARE - Research Assistant**  
-  Designed and implemented a human motion capture system with IMU.
-- **FUMCARE - Biomedical Engineer Intern**  
-  Assembled wearable medical robotics devices, including FUM-HEXA and FUM-Exoskeleton, integrating sensors and microcontrollers.
-- **RAYAN - Electrical Engineer Intern**  
-  Designed PCB prototypes for remote device control and programmed Arduino-based controllers for smart home systems.
-- **Politecnico di Milano - Student Representative**  
-  Student Representative of the Telecommunications Engineering Department.
-
-
-### 🏆 Awards & Publications
-
-- 🥇 **1st Place Team Award - Signal Processing and Learning Course**  
-  Politecnico di Milano, Prof. Umberto Spagnolini
-- 📄 **Publication:**  
-  *A Gait Phase Detection System based on Peak Detection Method and Neural Network* - ISME2024
-
 ### 📫 Reach Me
 - Email: **moazen.mustafa@yahoo.com**
 - Location: **Milan, Italy**
