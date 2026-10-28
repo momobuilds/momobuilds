@@ -35,7 +35,7 @@ const CASES = [
   { icon: "glasses", grad: "g-violet", tag: "Wearable · 04/2026 – now", title: "InVox", sub: "Embedded Engineer · Biomedical and Data Science Association",
     desc: "A silent-speech wearable hidden in ordinary eyeglass frames, designed for zero stigma and zero effort.",
     points: ["Built the first data-acquisition prototype: 2 EMG sensors, 2 IMUs and an STM32 NUCLEO-U575ZI-Q."], link: GH + "InVox" },
-  { icon: "watch", grad: "g-teal", tag: "Wearable · 04/2026 – now", title: "BEA Band", sub: "Embedded Engineer · InVox Biomedical Association",
+  { img: "assets/img/bea-band.webp", tag: "Wearable · 04/2026 – now", title: "BEA Band", sub: "Embedded Engineer · InVox Biomedical Association",
     desc: "A screenless wearable watch that senses the body quietly in the background.",
     points: ["Miniaturizing the prototype in Altium: heart-rate, temperature, IMU and sweat sensors on one small board."] },
 ];
@@ -82,18 +82,20 @@ const RECOGNITION = [
 ];
 
 const PROJECTS = [
-  { f: 1, icon: "antenna", grad: "g-sky", tag: "RF / SDR", title: "Angle of arrival with PlutoSDR", sub: "Real-time direction finding",
+  { f: 1, img: "assets/img/aoa.webp", tag: "RF / SDR", title: "Angle of arrival with PlutoSDR", sub: "Real-time direction finding",
     desc: "Estimates where a signal comes from using LTE SRS correlation on two coherent receive channels, with splitter-based phase calibration and a live GUI.", result: "Real-time GUI", repo: "rf-aoa-localization" },
+  { f: 1, img: "assets/img/iomt-pcb.webp", tag: "IoMT", title: "Wireless heart-sound monitor", sub: "Internet of Medical Things lab · team project",
+    desc: "I designed the carrier PCB for an Arduino Nano ESP32 and SEN-14262 sensor, then implemented and compared Serial, BLE, Wi-Fi UDP and Wi-Fi TCP streaming of heart sounds at 500 Hz.", result: "BLE 306 mW vs Wi-Fi 600 mW", url: "https://github.com/MobinKhatib/IoMT_Phonocardiography", linkText: "Team repo ↗" },
   { f: 1, icon: "body", grad: "g-blue", tag: "Wearables", title: "Wireless IMU motion capture", sub: "Low-cost skeletal tracking",
     desc: "A motion-capture system built from wireless IMU nodes and a skeletal model, for rehabilitation and sport analysis.", result: "1–14 nodes · ~4 h battery", repo: "Real-time-3D-human-motion-capture-system-and-human-movement-analysis-using-IMU-sensors" },
   { f: 1, icon: "steps", grad: "g-orange", tag: "Wearables", title: "Gait phase detection", sub: "Published at ISME 2024",
     desc: "Detects heel strike and toe-off from one lower-back IMU. Ground truth came from push-button switches in custom shoes.", result: "Accuracy above 97%", repo: "A-Gait-Phase-Detection-System-based-on-Peak-Detection-Method" },
   { f: 1, img: "assets/img/swem.webp", tag: "ML · Health", title: "SWEM", sub: "Student wellbeing monitor · team of 4",
     desc: "Tracks posture, blink rate and heart rate during study sessions and labels the student as focused, stressed or sleepy.", result: "3 biometrics → 3 states", repo: "Students-Ergonomics-Monitoring" },
-  { f: 1, img: "assets/img/mesa.webp", tag: "Autonomous driving", title: "MESA EC2026 AV challenge", sub: "LiDAR opponent detection",
+  { img: "assets/img/mesa.webp", tag: "Autonomous driving", title: "MESA EC2026 AV challenge", sub: "LiDAR opponent detection",
     desc: "Reads LiDAR straight from ROS 2 bags, moves points into the ego frame and clusters them with DBSCAN to find opponent cars.", result: "Runs without ROS 2", repo: "mesa-ec2026-av-challenge" },
   { f: 1, img: "assets/img/plant.webp", tag: "Biosignals", title: "Plant electrical signals", sub: "AD8232 + Arduino",
-    desc: "Records plant electrophysiology, cuts 15-second samples, extracts features and trains baseline classifiers for five stimuli.", result: "5 classes · 15 s windows", repo: "Plant-Electrical-Signal-Collection-and-Classification" },
+    desc: "Electrodes on basil leaves, an AD8232 front end and a Python logger. Signals are cut into 15-second windows and classified into five conditions with Random Forest, Extra Trees and KNN.", result: "Random Forest 92.6% · pilot data", repo: "Plant-Electrical-Signal-Collection-and-Classification" },
   { icon: "glasses", grad: "g-violet", tag: "Wearables", title: "InVox sensor acquisition", sub: "Silent-speech eyeglasses",
     desc: "Acquisition scripts and notes for the MyoWare EMG and ICM-20948 IMU used in the InVox prototype.", result: "EMG + IMU", repo: "InVox" },
   { icon: "neural", grad: "g-rose", tag: "Biosignals", title: "Lower-limb movement classification", sub: "EMG + neural and fuzzy networks",
@@ -178,7 +180,7 @@ $("#project-grid").innerHTML = PROJECTS.map((p) => `
       <p class="sub">${p.sub}</p>
       <p class="desc">${p.desc}</p>
       <span class="result">${p.result}</span>
-      <div class="actions"><a class="link-btn" href="${GH + p.repo}" target="_blank" rel="noopener">View code ↗</a></div>
+      <div class="actions"><a class="link-btn" href="${p.url || GH + p.repo}" target="_blank" rel="noopener">${p.linkText || "View code ↗"}</a></div>
     </div>
   </article>`).join("");
 
