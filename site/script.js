@@ -84,7 +84,7 @@ const RECOGNITION = [
 const PROJECTS = [
   { f: 1, img: "assets/img/aoa.webp", tag: "RF / SDR", title: "Angle of arrival with PlutoSDR", sub: "Real-time direction finding",
     desc: "Estimates where a signal comes from using LTE SRS correlation on two coherent receive channels, with splitter-based phase calibration and a live GUI.", result: "Real-time GUI", repo: "rf-aoa-localization" },
-  { f: 1, img: "assets/img/iomt-pcb.webp", tag: "IoMT", title: "Wireless heart-sound monitor", sub: "Internet of Medical Things lab · team project",
+  { f: 1, icon: "heart", grad: "g-rose", tag: "IoMT", title: "Wireless heart-sound monitor", sub: "Internet of Medical Things lab · team project",
     desc: "I designed the carrier PCB for an Arduino Nano ESP32 and SEN-14262 sensor, then implemented and compared Serial, BLE, Wi-Fi UDP and Wi-Fi TCP streaming of heart sounds at 500 Hz.", result: "BLE 306 mW vs Wi-Fi 600 mW", url: "https://github.com/MobinKhatib/IoMT_Phonocardiography", linkText: "Team repo ↗" },
   { f: 1, icon: "body", grad: "g-blue", tag: "Wearables", title: "Wireless IMU motion capture", sub: "Low-cost skeletal tracking",
     desc: "A motion-capture system built from wireless IMU nodes and a skeletal model, for rehabilitation and sport analysis.", result: "1–14 nodes · ~4 h battery", repo: "Real-time-3D-human-motion-capture-system-and-human-movement-analysis-using-IMU-sensors" },
