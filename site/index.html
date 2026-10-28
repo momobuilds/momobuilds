@@ -4,87 +4,156 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Mostafa Moazen | Embedded &amp; Wearable Engineer</title>
-<meta name="description" content="Portfolio of Mostafa Moazen, embedded engineer in Milan working on wearable devices, biosignals and edge AI.">
+<meta name="description" content="Mostafa Moazen, embedded engineer in Milan building wearable devices, biosignal pipelines and edge AI.">
 <meta property="og:title" content="Mostafa Moazen | Embedded &amp; Wearable Engineer">
 <meta property="og:description" content="Wearable sensing, biosignals and edge AI. M.Sc. Telecommunications, Politecnico di Milano.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#eef4fb">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff6b2c'/%3E%3Cpath d='M5 17h5l3-8 4 15 3-9 2 2h5' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<div class="wrap">
-  <nav>
-    <span class="brand">mostafa.moazen</span>
-    <div class="links"><a href="#now">Now</a><a href="#work">Work</a><a href="#path">Path</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="wallpaper" id="wallpaper" aria-hidden="true"></div>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Primary">
+    <a class="nav-pill" href="resume.html">Resume</a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a class="desk" href="#now">Now</a>
+      <a class="desk" href="#experience">Experience</a>
+      <a class="desk" href="#education">Education</a>
+      <a class="desk" href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
+</header>
 
-  <header class="hero">
-    <div class="eyebrow">Embedded engineer · Milan, Italy</div>
-    <h1>I build the <em>sensors</em> that listen to the body.</h1>
-    <p class="lead">M.Sc. Telecommunications student at <b>Politecnico di Milano</b>. I design wearable and biomedical sensing systems, from the firmware on the board to the signal processing and machine learning on top.</p>
-    <div class="cta"><a class="btn primary" href="#work">See the work</a><a class="btn" href="https://github.com/momobuilds">GitHub ↗</a></div>
-    <div class="scope" aria-label="Animated sample biosignal traces">
-      <div class="scope-head">
-        <span class="eyebrow">Live sample · simulated</span>
-        <span class="legend"><span><i style="background:var(--accent)"></i>sEMG 1 kHz</span><span><i style="background:var(--trace2)"></i>IMU accel Z</span><span><i style="background:var(--trace3)"></i>PPG</span></span>
+<main id="main">
+  <section class="hero" id="home" aria-label="Mostafa Moazen">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="hero-kicker">Milan, Italy · M.Sc. at Politecnico di Milano</p>
+      <h1 class="hero-name">Hi, I'm Mostafa Moazen</h1>
+      <p class="hero-role">I am <span class="type-a">an</span> <strong id="typer">Embedded Engineer</strong><span class="caret" aria-hidden="true">_</span></p>
+      <p class="hero-summary">I design wearable and biomedical sensing systems. I take a signal from the electrode or the IMU, through the firmware, and all the way to the model that makes sense of it.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#now">Selected work</a>
+        <a class="btn btn-ghost" href="resume.html">Resume</a>
+        <a class="btn btn-ghost" href="https://github.com/momobuilds" target="_blank" rel="noopener">GitHub</a>
       </div>
-      <canvas id="scope" width="1000" height="210"></canvas>
     </div>
-  </header>
-
-  <section id="now">
-    <div class="sec-head"><h2>What I'm doing now</h2><p>Three things running in parallel this year.</p></div>
-    <div class="now">
-      <article><div class="eyebrow">Since 07/2026</div><h3>LWT3</h3><p>Embedded engineer intern. Validating Wings sEMG firmware against a BTS reference system and building a real-time edge processing pipeline.</p></article>
-      <article><div class="eyebrow">Wearable</div><h3>InVox</h3><p>A silent-speech device hidden in eyeglass frames. I built the first embedded data acquisition prototype with EMG and IMU sensors.</p></article>
-      <article><div class="eyebrow">Wearable</div><h3>BEA Band</h3><p>A screenless wearable watch. I work on miniaturizing the latest embedded prototype.</p></article>
-    </div>
+    <a class="scroll-cue" href="#now" aria-label="Scroll to current work"><span></span></a>
   </section>
 
-  <section id="work">
-    <div class="sec-head"><h2>Selected work</h2><p>Filter by the area you care about.</p></div>
-    <div class="chips" id="chips" role="group" aria-label="Filter projects"></div>
-    <div class="grid" id="grid"></div>
-  </section>
+  <section class="section" id="now" aria-labelledby="now-h">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 id="now-h">What I'm building now</h2>
+        <p class="section-sub">Embedded Engineer Intern at LWT3 · 07/2026 – present</p>
+        <p class="section-lead">I work on Wings, a wireless surface-EMG system. My job is to make sure the firmware measures what it claims to, and to move the signal processing onto the device.</p>
+      </div>
 
-  <section id="path">
-    <div class="sec-head"><h2>Path</h2><p>Newest first.</p></div>
-    <ol class="timeline">
-      <li class="current"><span class="when">07/2026 – NOW</span><h3>Embedded Engineer Intern <span class="org">· LWT3</span></h3>
-        <ul><li>Test and validate Wings firmware using the BTS FREEEMG 1000 as a reference.</li><li>Develop a real-time edge sEMG pipeline: band-pass and notch filtering, motion-artifact suppression, activation estimation, spectral analysis.</li><li>Develop a multimodal fusion pipeline (sEMG, heart rate, EDA, PPG) for fatigue prediction.</li></ul></li>
-      <li><span class="when">02/2021 – 03/2024</span><h3>Research Assistant <span class="org">· FUMCARE</span></h3>
-        <ul><li>Built a low-cost wireless 9-axis IMU motion-capture system supporting 1 to 14 wearable nodes, about 4 hours of battery life.</li><li>Gait-event detection from one lower-back IMU, with mean timing errors of 16–21 ms against instrumented insoles.</li><li>CNN in PyTorch classifying gait phases, about 85% mean accuracy across 14 participants.</li></ul></li>
-      <li><span class="when">06/2022 – 09/2022</span><h3>Electrical Engineer Intern <span class="org">· FUMCARE</span></h3>
-        <ul><li>Assembled and wired electronics for wearable medical robotics, and documented CAN-bus, motor and sensor interfaces.</li></ul></li>
-      <li><span class="when">06/2020 – 09/2020</span><h3>Electrical Engineer Intern <span class="org">· RAYAN</span></h3>
-        <ul><li>Designed a remote-control PCB in Altium and prototyped an ESP32 smart-home TouchKey.</li></ul></li>
-    </ol>
-  </section>
+      <article class="showcase reveal">
+        <div class="showcase-media">
+          <canvas id="emg-canvas" aria-label="Animated example of an sEMG processing pipeline: raw signal, filtered signal and activation envelope"></canvas>
+          <div class="showcase-legend"><span><i class="l-raw"></i>Raw sEMG</span><span><i class="l-filt"></i>Band-pass + notch</span><span><i class="l-env"></i>Activation envelope</span></div>
+        </div>
+        <div class="showcase-copy">
+          <span class="pill">Edge sEMG pipeline</span>
+          <h3>From noisy electrodes to muscle activation, on the device</h3>
+          <p>A real-time processing chain that runs at the edge instead of on a laptop.</p>
+          <ul class="impact">
+            <li>Validate Wings firmware against the BTS FREEEMG 1000 reference system.</li>
+            <li>Band-pass and notch filtering, motion-artifact suppression and spectral analysis in real time.</li>
+            <li>Sensor fusion of sEMG, heart rate, EDA and PPG to predict fatigue.</li>
+          </ul>
+          <div class="tags"><span>Zephyr RTOS</span><span>nRF5340</span><span>ADS1298</span><span>BLE</span><span>Python</span></div>
+        </div>
+      </article>
 
-  <section id="skills">
-    <div class="sec-head"><h2>Toolbox</h2></div>
-    <div class="skills">
-      <div><h3>Languages</h3><div><span>C / C++</span><span>Python</span><span>MATLAB</span><span>SQL</span></div></div>
-      <div><h3>Embedded &amp; edge AI</h3><div><span>STM32</span><span>ESP32</span><span>nRF5340</span><span>Zephyr</span><span>Arduino</span><span>FPGA</span><span>hls4ml</span><span>Altium</span></div></div>
-      <div><h3>Protocols</h3><div><span>I2C</span><span>SPI</span><span>CAN</span><span>BLE</span><span>Wi-Fi</span><span>USB</span><span>LoRa</span><span>MQTT</span></div></div>
-      <div><h3>AI &amp; data</h3><div><span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>OpenCV</span><span>MediaPipe</span><span>Ollama</span></div></div>
-      <div><h3>Signals</h3><div><span>sEMG</span><span>PPG</span><span>IMU</span><span>SDR / RF</span><span>Sensor fusion</span><span>Time series</span></div></div>
-      <div><h3>Workflow</h3><div><span>Git</span><span>Linux</span><span>GitHub Actions</span><span>pytest</span><span>Jupyter</span></div></div>
+      <div class="case-grid" id="case-grid"></div>
     </div>
   </section>
 
-  <section id="contact">
-    <div class="contact">
-      <div class="eyebrow" style="color:inherit;opacity:.7">Open to embedded and wearable roles</div>
-      <h2>Let's build something that measures.</h2>
-      <p>If you work on wearables, biomedical devices or edge AI, I would like to hear about it.</p>
-      <div class="mail">mostafa.moazenkakhki@mail.polimi.it</div>
-      <div class="cta"><a class="btn primary" href="https://github.com/momobuilds">github.com/momobuilds ↗</a></div>
+  <section class="section" id="experience" aria-labelledby="exp-h">
+    <div class="container">
+      <div class="section-head reveal"><h2 id="exp-h">Experience</h2><p class="section-sub">Select a card to read more.</p></div>
+      <div class="card-grid" id="exp-grid"></div>
     </div>
-    <footer><span>© 2026 Mostafa Moazen</span><span>Milan, Italy</span></footer>
   </section>
+
+  <section class="section" id="education" aria-labelledby="edu-h">
+    <div class="container">
+      <div class="section-head reveal"><h2 id="edu-h">Education</h2></div>
+      <div class="card-grid two" id="edu-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="recognition" aria-labelledby="rec-h">
+    <div class="container">
+      <div class="section-head reveal"><h2 id="rec-h">Awards &amp; publication</h2></div>
+      <div class="rec-grid" id="rec-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="projects" aria-labelledby="proj-h">
+    <div class="container">
+      <div class="section-head reveal"><h2 id="proj-h">Projects</h2><p class="section-sub">Code for each one is on GitHub.</p></div>
+      <div class="project-grid" id="project-grid"></div>
+      <div class="center"><button class="btn btn-primary" id="more-btn" type="button" aria-expanded="false">Show all projects</button></div>
+    </div>
+  </section>
+
+  <section class="section" id="skills" aria-labelledby="skills-h">
+    <div class="container">
+      <div class="section-head reveal"><h2 id="skills-h">Skills</h2></div>
+      <div class="skill-grid" id="skill-grid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="container footer-inner reveal">
+    <h2>Let's build something that measures.</h2>
+    <p>I'm open to embedded, wearable and biomedical engineering roles. Email is the fastest way to reach me.</p>
+    <div class="mail-row">
+      <span class="mail" id="mail">mostafa.moazenkakhki@mail.polimi.it</span>
+      <button class="btn btn-white" id="copy-btn" type="button">Copy email</button>
+    </div>
+    <div class="socials">
+      <a href="mailto:mostafa.moazenkakhki@mail.polimi.it">Email</a>
+      <a href="https://github.com/momobuilds" target="_blank" rel="noopener">GitHub</a>
+      <a href="resume.html">Resume</a>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Mostafa Moazen · Milan, Italy</p>
+  </div>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-bg" data-close></div>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+    <button class="modal-x" type="button" data-close aria-label="Close">×</button>
+    <div class="modal-media" id="modal-media"></div>
+    <div class="modal-body">
+      <p class="modal-meta" id="modal-meta"></p>
+      <h3 id="modal-title"></h3>
+      <p class="modal-org" id="modal-org"></p>
+      <ul id="modal-list"></ul>
+      <div class="modal-nav">
+        <button class="btn btn-ghost" type="button" id="modal-prev">← Previous</button>
+        <span id="modal-count"></span>
+        <button class="btn btn-ghost" type="button" id="modal-next">Next →</button>
+      </div>
+    </div>
+  </div>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>

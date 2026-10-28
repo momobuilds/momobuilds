@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Resume | Mostafa Moazen</title>
+<meta name="description" content="Resume of Mostafa Moazen, embedded engineer and M.Sc. Telecommunications student at Politecnico di Milano.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ff6b2c'/%3E%3Cpath d='M5 17h5l3-8 4 15 3-9 2 2h5' fill='none' stroke='white' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+  .resume { max-width: 860px; margin: 110px auto 60px; background: #fff; border: 1px solid var(--line); border-radius: 22px; box-shadow: var(--shadow); padding: clamp(22px, 5vw, 52px); }
+  .resume header { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: end; padding-bottom: 22px; border-bottom: 3px solid; border-image: linear-gradient(90deg, var(--orange), var(--blue)) 1; }
+  .resume h1 { font-size: clamp(30px, 5vw, 42px); font-weight: 800; }
+  .resume .role { margin: 6px 0 0; color: var(--blue); font-weight: 700; }
+  .resume .contact { font: 500 13px var(--mono); color: var(--muted); text-align: right; display: grid; gap: 2px; }
+  .resume h2 { font-size: 14px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--orange-dark); margin: 32px 0 12px; }
+  .resume p { margin: 0; color: var(--ink-2); }
+  .entry { margin-bottom: 18px; }
+  .entry .top { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .entry h3 { font-size: 17px; font-weight: 800; }
+  .entry .org { color: var(--muted); font-weight: 600; }
+  .entry .date { font: 500 12.5px var(--mono); color: var(--blue); white-space: nowrap; }
+  .entry ul { margin: 6px 0 0; padding-left: 20px; color: var(--ink-2); display: grid; gap: 4px; }
+  .skills-table { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; }
+  .skills-table dt { font-weight: 700; }
+  .skills-table dd { margin: 0; color: var(--ink-2); }
+  @media (max-width: 560px) { .skills-table { grid-template-columns: 1fr; } .skills-table dd { margin-bottom: 8px; } .resume .contact { text-align: left; } }
+  .page-wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); background: linear-gradient(180deg, #eaf2fc, #fff 600px); min-height: 100vh; overflow: hidden; }
+</style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar" aria-label="Primary">
+    <a class="nav-pill" href="index.html">← Portfolio</a>
+    <div class="nav-links"><a href="index.html#projects">Projects</a><a href="index.html#contact">Contact</a></div>
+  </nav>
+</header>
+
+<div class="page-wrap">
+<main class="resume">
+  <header>
+    <div>
+      <h1>Mostafa Moazen</h1>
+      <p class="role">Embedded Engineer · M.Sc. Telecommunications, Politecnico di Milano</p>
+    </div>
+    <div class="contact">
+      <span>Milan, Italy</span>
+      <span>mostafa.moazenkakhki@mail.polimi.it</span>
+      <a href="https://github.com/momobuilds">github.com/momobuilds</a>
+    </div>
+  </header>
+
+  <h2>Summary</h2>
+  <p>Embedded engineer and M.Sc. Telecommunications Engineering student with hands-on experience in firmware validation, STM32/ESP32 systems, sensor acquisition, wearable devices, signal processing, sensor fusion, edge processing, PCB design and applied deep learning.</p>
+
+  <h2>Experience</h2>
+  <div class="entry">
+    <div class="top"><h3>Embedded Engineer Intern <span class="org">· LWT3, Milan</span></h3><span class="date">07/2026 – present</span></div>
+    <ul>
+      <li>Test and validate Wings firmware using the BTS FREEEMG 1000 as a reference.</li>
+      <li>Develop a real-time edge sEMG pipeline for band-pass/notch filtering, motion-artifact suppression, muscle-activation estimation and spectral analysis.</li>
+      <li>Develop a multimodal sensor-fusion pipeline combining sEMG, heart rate, EDA and PPG for fatigue prediction.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="top"><h3>Embedded Engineer <span class="org">· InVox and BEA Band projects, Milan</span></h3><span class="date">04/2026 – present</span></div>
+    <ul>
+      <li>InVox: built the first data-acquisition prototype with 2 EMG sensors, 2 IMUs and an STM32 NUCLEO-U575ZI-Q.</li>
+      <li>BEA Band: miniaturizing a wearable prototype with heart-rate, temperature, IMU and sweat sensors in Altium.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="top"><h3>Research Assistant <span class="org">· FUMCARE</span></h3><span class="date">02/2021 – 03/2024</span></div>
+    <ul>
+      <li>Developed a low-cost wireless 9-axis IMU motion-capture system (ICM-20948) supporting 1–14 wearable nodes with about 4 hours of battery life.</li>
+      <li>Validated IMU-based gait-event detection from a single lower-back sensor, with mean timing errors of 16–21 ms against instrumented-insole ground truth.</li>
+      <li>Trained a PyTorch CNN to classify gait phases with about 85% mean accuracy on 14 participants.</li>
+      <li>Built a Python and Streamlit pipeline for IMU feature extraction and visualization.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="top"><h3>Electrical Engineer Intern <span class="org">· FUMCARE</span></h3><span class="date">06/2022 – 09/2022</span></div>
+    <ul>
+      <li>Assembled electronics for wearable medical robotics, including FUM-HEXA and FUM-Exoskeleton.</li>
+      <li>Created wiring and system-integration diagrams covering power, CAN bus, motors, EMG, IMU, FSR and Raspberry Pi subsystems.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="top"><h3>Electrical Engineer Intern <span class="org">· RAYAN</span></h3><span class="date">06/2020 – 09/2020</span></div>
+    <ul>
+      <li>Designed a PCB in Altium for remote device control and prototyped an ESP32-based smart-home TouchKey.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="top"><h3>M.Sc. Telecommunication Engineering <span class="org">· Politecnico di Milano</span></h3><span class="date">09/2024 – present</span></div>
+    <ul><li>Specialization: Data and Signal Analysis. Student Representative, Telecommunications Engineering Department (09/2025 – present).</li></ul>
+  </div>
+  <div class="entry">
+    <div class="top"><h3>B.Sc. Electrical and Biomedical Engineering <span class="org">· Ferdowsi University of Mashhad</span></h3><span class="date">09/2018 – 09/2023</span></div>
+  </div>
+
+  <h2>Awards &amp; publication</h2>
+  <div class="entry">
+    <div class="top"><h3>1st Place Team Award <span class="org">· Signal Processing and Learning, Politecnico di Milano</span></h3><span class="date">12/2025</span></div>
+    <ul><li>Awarded attendance at the 6th IEEE International Symposium on Joint Communications &amp; Sensing (JC&amp;S 2026).</li></ul>
+  </div>
+  <div class="entry">
+    <div class="top"><h3>1st Place, Iraj Yazdanbakhsh Technological Award <span class="org">· Ferdowsi University of Mashhad</span></h3><span class="date">03/2023</span></div>
+    <ul><li>With the FUM CARE team for FUM-HEXA, a wearable hip exoskeleton.</li></ul>
+  </div>
+  <div class="entry">
+    <div class="top"><h3>A Gait Phase Detection System based on Peak Detection Method and Neural Network</h3><span class="date">ISME 2024</span></div>
+  </div>
+
+  <h2>Skills</h2>
+  <dl class="skills-table">
+    <dt>Programming</dt><dd>C/C++, Python, MATLAB, SQL</dd>
+    <dt>Embedded &amp; edge AI</dt><dd>STM32, Zephyr RTOS, ESP32, Arduino, Raspberry Pi, FPGA, HLS, hls4ml, Altium</dd>
+    <dt>Protocols</dt><dd>I2C, SPI, CAN, Serial, BLE, Wi-Fi, USB, LoRa, ZigBee</dd>
+    <dt>AI &amp; data</dt><dd>PyTorch, TensorFlow, Keras, scikit-learn, OpenCV, MediaPipe</dd>
+    <dt>Signals</dt><dd>Biomedical signals, PPG, IMU, RF/SDR, feature extraction, time-series analysis, sensor fusion</dd>
+    <dt>Tools</dt><dd>Git, Linux, pytest, Jupyter, Streamlit, SQLite</dd>
+    <dt>Languages</dt><dd>Persian (native), English (fluent), Italian (A2)</dd>
+  </dl>
+</main>
+</div>
+</body>
+</html>
