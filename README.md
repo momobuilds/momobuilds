@@ -8,6 +8,8 @@
 I am passionate about designing sensor-based systems for **wearable devices, biomedical monitoring, robotics and physical AI, AR/VR applications, and interactive healthcare technologies**: from sensor hardware and embedded firmware to signal processing and machine learning on real-world data.
 
 ### 🚀 What I'm Doing Now
+- 🔧 **Embedded Software Engineer at LWT3**  
+  Developing embedded software for sensor-based systems.
 - 🧠 **M.Sc. Student in Telecommunications Engineering at Politecnico di Milano**  
   Specializing in data and signal analysis, with a focus on biomedical signals, sensor data processing, machine learning, and embedded systems.
 - 🗣️ **Electronic Engineer at InVox - BEA and PMDS**  
